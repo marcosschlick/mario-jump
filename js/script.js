@@ -37,4 +37,8 @@ const loop = setInterval(() => {
 
 
 
-document.addEventListener('keydown', jump);
+document.addEventListener('keydown', (event) => {
+    if (event.key === ' ') {
+        jump();
+    }
+});
